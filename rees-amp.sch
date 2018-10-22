@@ -1,0 +1,469 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:rees-amp-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Piezo amplifier"
+Date "2016-03-22"
+Rev "1"
+Comp "Technairum"
+Comment1 "Albertas Mickėnas"
+Comment2 "albertas@technarium.lt"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Q_NJFET_DSG Q1
+U 1 1 56DFC3B4
+P 5250 3050
+F 0 "Q1" H 5443 3096 50  0000 L CNN
+F 1 "2N3819" H 5443 3004 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Wide_Oval" H 5444 2958 29  0001 L CNN
+F 3 "" H 5250 3050 60  0000 C CNN
+F 4 "?" H 5250 3050 60  0001 C CNN "PartNo"
+F 5 "?" H 5250 3050 60  0001 C CNN "Manufacturer"
+F 6 "?" H 5250 3050 60  0001 C CNN "Distributor"
+	1    5250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 56DFC3F2
+P 5050 2900
+F 0 "D1" V 5096 2822 50  0000 R CNN
+F 1 "D" V 5004 2822 50  0000 R CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 5050 2900 60  0001 C CNN
+F 3 "" H 5050 2900 60  0000 C CNN
+F 4 "?" H 5050 2900 60  0001 C CNN "PartNo"
+F 5 "?" H 5050 2900 60  0001 C CNN "Manufacturer"
+F 6 "?" H 5050 2900 60  0001 C CNN "Distributor"
+	1    5050 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D2
+U 1 1 56DFC45E
+P 5050 3200
+F 0 "D2" V 5004 3278 50  0000 L CNN
+F 1 "D" V 5096 3278 50  0000 L CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" V 5142 3278 60  0001 L CNN
+F 3 "" H 5050 3200 60  0000 C CNN
+F 4 "?" H 5050 3200 60  0001 C CNN "PartNo"
+F 5 "?" H 5050 3200 60  0001 C CNN "Manufacturer"
+F 6 "?" H 5050 3200 60  0001 C CNN "Distributor"
+	1    5050 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 56DFC4A3
+P 4400 3100
+F 0 "P1" H 4319 2712 50  0000 C CNN
+F 1 "PIEZO" H 4319 2804 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 4319 2903 60  0001 C CNN
+F 3 "" H 4400 3100 60  0000 C CNN
+F 4 "?" H 4400 3100 60  0001 C CNN "PartNo"
+F 5 "?" H 4400 3100 60  0001 C CNN "Manufacturer"
+F 6 "?" H 4400 3100 60  0001 C CNN "Distributor"
+	1    4400 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 56DFC541
+P 5350 3500
+F 0 "R2" H 5420 3576 50  0000 L CNN
+F 1 "3.9k" H 5420 3484 50  0000 L CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" H 5420 3408 30  0001 L CNN
+F 3 "" H 5350 3500 30  0000 C CNN
+F 4 "?" H 5350 3500 60  0001 C CNN "PartNo"
+F 5 "?" H 5350 3500 60  0001 C CNN "Manufacturer"
+F 6 "?" H 5350 3500 60  0001 C CNN "Distributor"
+	1    5350 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 56DFC565
+P 4800 3200
+F 0 "R1" H 4870 3276 50  0000 L CNN
+F 1 "3.9M" H 4870 3184 50  0000 L CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" H 4870 3108 30  0001 L CNN
+F 3 "" H 4800 3200 30  0000 C CNN
+F 4 "?" H 4800 3200 60  0001 C CNN "PartNo"
+F 5 "?" H 4800 3200 60  0001 C CNN "Manufacturer"
+F 6 "?" H 4800 3200 60  0001 C CNN "Distributor"
+	1    4800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 56DFC591
+P 5050 3500
+F 0 "C2" H 5168 3576 50  0000 L CNN
+F 1 "22u" H 5168 3484 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" H 5168 3408 30  0001 L CNN
+F 3 "" H 5050 3500 60  0000 C CNN
+F 4 "?" H 5050 3500 60  0001 C CNN "PartNo"
+F 5 "?" H 5050 3500 60  0001 C CNN "Manufacturer"
+F 6 "?" H 5050 3500 60  0001 C CNN "Distributor"
+	1    5050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3050 5050 3050
+Wire Wire Line
+	5050 3350 5350 3350
+Wire Wire Line
+	5350 3350 5350 3250
+Connection ~ 5350 3350
+Wire Wire Line
+	4800 3650 4800 3350
+Connection ~ 5050 3650
+Wire Wire Line
+	5050 2750 5350 2750
+Wire Wire Line
+	5350 2750 5350 2850
+Connection ~ 4800 3050
+Wire Wire Line
+	4600 3150 4600 3650
+Connection ~ 4800 3650
+$Comp
+L CONN_01X02 P2
+U 1 1 56DFCDCF
+P 6150 3500
+F 0 "P2" H 6068 3112 50  0000 C CNN
+F 1 "BATTERY" H 6068 3204 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6068 3303 60  0001 C CNN
+F 3 "" H 6150 3500 60  0000 C CNN
+F 4 "?" H 6150 3500 60  0001 C CNN "PartNo"
+F 5 "?" H 6150 3500 60  0001 C CNN "Manufacturer"
+F 6 "?" H 6150 3500 60  0001 C CNN "Distributor"
+	1    6150 3500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5350 2850 5500 2850
+$Comp
+L CP C1
+U 1 1 56DFCF96
+P 5650 2850
+F 0 "C1" V 5966 2850 50  0000 C CNN
+F 1 "4.7u" V 5874 2850 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" V 5798 2850 30  0001 C CNN
+F 3 "" H 5650 2850 60  0000 C CNN
+F 4 "?" H 5650 2850 60  0001 C CNN "PartNo"
+F 5 "?" H 5650 2850 60  0001 C CNN "Manufacturer"
+F 6 "?" H 5650 2850 60  0001 C CNN "Distributor"
+	1    5650 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 2850 6700 2850
+Wire Wire Line
+	5950 3650 5950 3550
+Connection ~ 5350 3650
+Connection ~ 5950 3650
+$Comp
+L R R3
+U 1 1 56DFD268
+P 5350 2600
+F 0 "R3" H 5280 2524 50  0000 R CNN
+F 1 "3.9k" H 5280 2616 50  0000 R CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" H 5280 2692 30  0001 R CNN
+F 3 "" H 5350 2600 30  0000 C CNN
+F 4 "?" H 5350 2600 60  0001 C CNN "PartNo"
+F 5 "?" H 5350 2600 60  0001 C CNN "Manufacturer"
+F 6 "?" H 5350 2600 60  0001 C CNN "Distributor"
+	1    5350 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 3450 5950 2450
+Wire Wire Line
+	5950 2450 5350 2450
+$Comp
+L GND #PWR1
+U 1 1 56E023A6
+P 5350 3650
+F 0 "#PWR1" H 5350 3400 50  0001 C CNN
+F 1 "GND" H 5358 3476 50  0000 C CNN
+F 2 "" H 5350 3650 60  0000 C CNN
+F 3 "" H 5350 3650 60  0000 C CNN
+	1    5350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C3
+U 1 1 56E02832
+P 7650 4150
+F 0 "C3" H 7768 4226 50  0000 L CNN
+F 1 "10u" H 7768 4134 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" H 7768 4058 30  0001 L CNN
+F 3 "" H 7650 4150 60  0000 C CNN
+F 4 "?" H 7650 4150 60  0001 C CNN "PartNo"
+F 5 "?" H 7650 4150 60  0001 C CNN "Manufacturer"
+F 6 "?" H 7650 4150 60  0001 C CNN "Distributor"
+	1    7650 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 3600 7650 3700
+Wire Wire Line
+	7750 3600 7750 4300
+$Comp
+L GND #PWR4
+U 1 1 56E029A7
+P 7550 3600
+F 0 "#PWR4" H 7550 3350 50  0001 C CNN
+F 1 "GND" H 7558 3426 50  0000 C CNN
+F 2 "" H 7550 3600 60  0000 C CNN
+F 3 "" H 7550 3600 60  0000 C CNN
+	1    7550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR2
+U 1 1 56E02CCD
+P 5950 2450
+F 0 "#PWR2" H 5950 2300 50  0001 C CNN
+F 1 "VCC" H 5970 2624 50  0000 C CNN
+F 2 "" H 5950 2450 60  0000 C CNN
+F 3 "" H 5950 2450 60  0000 C CNN
+	1    5950 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR3
+U 1 1 56E02D06
+P 7550 2600
+F 0 "#PWR3" H 7550 2450 50  0001 C CNN
+F 1 "VCC" H 7570 2774 50  0000 C CNN
+F 2 "" H 7550 2600 60  0000 C CNN
+F 3 "" H 7550 2600 60  0000 C CNN
+	1    7550 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3300 7150 3600
+Wire Wire Line
+	6700 3600 7550 3600
+$Comp
+L POT RV1
+U 1 1 56E02E98
+P 6700 3100
+F 0 "RV1" V 6654 3017 50  0000 R CNN
+F 1 "POT" V 6746 3017 50  0000 R CNN
+F 2 "Potentiometers:Potentiometer_WirePads" H 6700 3100 60  0001 C CNN
+F 3 "" H 6700 3100 60  0000 C CNN
+F 4 "?" H 6700 3100 60  0001 C CNN "PartNo"
+F 5 "?" H 6700 3100 60  0001 C CNN "Manufacturer"
+F 6 "?" H 6700 3100 60  0001 C CNN "Distributor"
+	1    6700 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 3100 7150 3100
+Wire Wire Line
+	6700 3350 6700 3600
+Connection ~ 7150 3600
+$Comp
+L LM386 U1
+U 1 1 56E03595
+P 7650 3200
+F 0 "U1" H 8191 3253 60  0000 L CNN
+F 1 "LM386" H 7450 3200 60  0000 L CNN
+F 2 "w_pth_circuits:dil_8-300_socket" H 8191 3094 60  0001 L CNN
+F 3 "" H 7650 3200 60  0000 C CNN
+F 4 "?" H 7650 3200 60  0001 C CNN "PartNo"
+F 5 "?" H 7650 3200 60  0001 C CNN "Manufacturer"
+F 6 "?" H 7650 3200 60  0001 C CNN "Distributor"
+	1    7650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 56E0387C
+P 7850 3600
+F 0 "C4" H 7965 3646 50  0000 L CNN
+F 1 "0.1u" H 7965 3554 50  0000 L CNN
+F 2 "w_capacitors:cnp_7x2mm" H 7965 3508 30  0001 L CNN
+F 3 "" H 7850 3600 60  0000 C CNN
+F 4 "?" H 7850 3600 60  0001 C CNN "PartNo"
+F 5 "?" H 7850 3600 60  0001 C CNN "Manufacturer"
+F 6 "?" H 7850 3600 60  0001 C CNN "Distributor"
+	1    7850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 56E03929
+P 7850 3750
+F 0 "#PWR6" H 7850 3500 50  0001 C CNN
+F 1 "GND" H 7858 3576 50  0000 C CNN
+F 2 "" H 7850 3750 60  0000 C CNN
+F 3 "" H 7850 3750 60  0000 C CNN
+	1    7850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 56E03B35
+P 8900 3250
+F 0 "P3" H 8818 2862 50  0000 C CNN
+F 1 "OUT" H 8818 2954 50  0000 C CNN
+F 2 "w_conn_screw:mors_2p" H 8818 3053 60  0001 C CNN
+F 3 "" H 8900 3250 60  0000 C CNN
+F 4 "?" H 8900 3250 60  0001 C CNN "PartNo"
+F 5 "?" H 8900 3250 60  0001 C CNN "Manufacturer"
+F 6 "?" H 8900 3250 60  0001 C CNN "Distributor"
+	1    8900 3250
+	1    0    0    1   
+$EndComp
+$Comp
+L CP C5
+U 1 1 56E03C35
+P 8300 3200
+F 0 "C5" H 8418 3276 50  0000 L CNN
+F 1 "220u" H 8418 3184 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" H 8418 3108 30  0001 L CNN
+F 3 "" H 8300 3200 60  0000 C CNN
+F 4 "?" H 8300 3200 60  0001 C CNN "PartNo"
+F 5 "?" H 8300 3200 60  0001 C CNN "Manufacturer"
+F 6 "?" H 8300 3200 60  0001 C CNN "Distributor"
+	1    8300 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 3200 8700 3200
+$Comp
+L GND #PWR8
+U 1 1 56E03D09
+P 8700 3300
+F 0 "#PWR8" H 8700 3050 50  0001 C CNN
+F 1 "GND" H 8708 3126 50  0000 C CNN
+F 2 "" H 8700 3300 60  0000 C CNN
+F 3 "" H 8700 3300 60  0000 C CNN
+	1    8700 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3650 5950 3650
+$Comp
+L R R4
+U 1 1 56E16B62
+P 7650 3850
+F 0 "R4" H 7720 3926 50  0000 L CNN
+F 1 "0" H 7720 3834 50  0000 L CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" H 7720 3758 30  0001 L CNN
+F 3 "" H 7650 3850 30  0000 C CNN
+F 4 "?" H 7650 3850 60  0001 C CNN "PartNo"
+F 5 "?" H 7650 3850 60  0001 C CNN "Manufacturer"
+F 6 "?" H 7650 3850 60  0001 C CNN "Distributor"
+	1    7650 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 4300 7650 4300
+$Comp
+L CP C6
+U 1 1 56E17F4F
+P 7800 2750
+F 0 "C6" H 7918 2826 50  0000 L CNN
+F 1 "22u" H 7918 2734 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" H 7918 2658 30  0001 L CNN
+F 3 "" H 7800 2750 60  0000 C CNN
+F 4 "?" H 7800 2750 60  0001 C CNN "PartNo"
+F 5 "?" H 7800 2750 60  0001 C CNN "Manufacturer"
+F 6 "?" H 7800 2750 60  0001 C CNN "Distributor"
+	1    7800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 56E1804C
+P 7800 2900
+F 0 "#PWR5" H 7800 2650 50  0001 C CNN
+F 1 "GND" H 7808 2726 50  0000 C CNN
+F 2 "" H 7800 2900 60  0000 C CNN
+F 3 "" H 7800 2900 60  0000 C CNN
+	1    7800 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2600 7800 2600
+Wire Wire Line
+	7550 2600 7550 2800
+$Comp
+L C C7
+U 1 1 56E18250
+P 8150 3600
+F 0 "C7" H 8265 3646 50  0000 L CNN
+F 1 "0.05u" H 8265 3554 50  0000 L CNN
+F 2 "w_capacitors:cnp_3mm_disc" H 8265 3508 30  0001 L CNN
+F 3 "" H 8150 3600 60  0000 C CNN
+F 4 "?" H 8150 3600 60  0001 C CNN "PartNo"
+F 5 "?" H 8150 3600 60  0001 C CNN "Manufacturer"
+F 6 "?" H 8150 3600 60  0001 C CNN "Distributor"
+	1    8150 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3450 8150 3200
+$Comp
+L R R5
+U 1 1 56E183D4
+P 8150 3900
+F 0 "R5" H 8220 3976 50  0000 L CNN
+F 1 "10" H 8220 3884 50  0000 L CNN
+F 2 "w_pth_resistors:RC03" H 8220 3808 30  0001 L CNN
+F 3 "" H 8150 3900 30  0000 C CNN
+F 4 "?" H 8150 3900 60  0001 C CNN "PartNo"
+F 5 "?" H 8150 3900 60  0001 C CNN "Manufacturer"
+F 6 "?" H 8150 3900 60  0001 C CNN "Distributor"
+	1    8150 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR7
+U 1 1 56E18439
+P 8150 4050
+F 0 "#PWR7" H 8150 3800 50  0001 C CNN
+F 1 "GND" H 8158 3876 50  0000 C CNN
+F 2 "" H 8150 4050 60  0000 C CNN
+F 3 "" H 8150 4050 60  0000 C CNN
+	1    8150 4050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
